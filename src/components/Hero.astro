@@ -1,0 +1,144 @@
+---
+import { ArrowUpRight, Download } from '@lucide/astro';
+---
+
+<section
+    class="min-h-[90vh] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto px-6 md:px-12"
+>
+    <div class="space-y-8">
+        <div>
+            <span
+                class="font-jetbrains text-sm text-[#06B6D4] font-bold tracking-[0.3em] uppercase block mb-4"
+            >
+                Fullstack Developer
+            </span>
+            <div class="space-y-1">
+                <h1
+                    class="font-montserrat text-white text-5xl md:text-7xl font-extrabold tracking-tight leading-tight"
+                >
+                    Arquitectura sólida.
+                </h1>
+                <h1
+                    class="font-montserrat text-[#06B6D4] text-5xl md:text-7xl font-extrabold tracking-tight leading-tight"
+                >
+                    Experiencias fluidas.
+                </h1>
+            </div>
+        </div>
+
+        <p class="text-lg md:text-xl text-[#94A3B8] max-w-lg leading-relaxed">
+            Soy <span class="font-medium text-white">devOC</span>, diseño la
+            lógica que no ves y la interfaz que te encanta usar. Especializado
+            en crear aplicaciones web modernas, rápidas y eficientes.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+            <a
+                href="#proyectos"
+                class="group text-lg flex items-center gap-2 w-fit bg-[#06B6D4] py-3.5 px-6 rounded-xl text-[#0F172A] font-bold hover:bg-[#06B6D4]/90 transition-all duration-300 hover:shadow-[0_4px_15px_#06B6D4]/40 hover:-translate-y-0.5"
+            >
+                Ver mis Proyectos
+                <ArrowUpRight
+                    class="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
+            </a>
+            <a
+                href="#"
+                class="text-lg font-semibold border-2 border-[#06B6D4]/30 text-[#06B6D4] py-3.5 px-6 rounded-xl flex items-center gap-2 w-fit hover:bg-[#06B6D4]/10 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#06B6D4]"
+            >
+                Descargar CV
+                <Download size={20} />
+            </a>
+        </div>
+    </div>
+
+    <div
+        class="flex items-center justify-center relative p-4 md:p-8 perspective-1000"
+    >
+        <div
+            class="w-full max-w-lg bg-[#0F172A]/90 backdrop-blur-sm rounded-xl border border-white/10 shadow-2xl transform rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105 cursor-default group"
+        >
+            <!-- Window Header -->
+            <div
+                class="flex items-center px-4 py-3 border-b border-white/5 bg-white/5 rounded-t-xl"
+            >
+                <div
+                    class="flex gap-2 group-hover:gap-2.5 transition-all duration-300"
+                >
+                    <div class="w-3 h-3 rounded-full bg-[#FF5F57] shadow-sm">
+                    </div>
+                    <div class="w-3 h-3 rounded-full bg-[#FEBC2E] shadow-sm">
+                    </div>
+                    <div class="w-3 h-3 rounded-full bg-[#28C840] shadow-sm">
+                    </div>
+                </div>
+                <div
+                    class="ml-4 text-xs text-slate-500 font-mono tracking-wide flex-1 text-center pr-12"
+                >
+                    main.ts — devOC
+                </div>
+            </div>
+
+            <!-- Code Content -->
+            <div
+                class="p-6 font-mono text-xs md:text-sm leading-relaxed text-slate-300 overflow-x-auto"
+            >
+                <div>
+                    <span class="text-[#C792EA]">interface</span>
+                    <span class="text-[#FFCB6B]">Developer</span>
+                    {}
+                    <div class="pl-4">
+                        name: <span class="text-[#C3E88D]">'devOC'</span>;
+                    </div>
+                    <div class="pl-4">
+                        mission: <span class="text-[#C3E88D]"
+                            >'Transforming ideas'</span
+                        >;
+                    </div>
+                    <div class="pl-4">
+                        stack: [<span class="text-[#C3E88D]">'Fullstack'</span
+                        >];
+                    </div>
+                    <div></div>
+                </div>
+                <br />
+                <div>
+                    <span class="text-[#C792EA]">const</span>
+                    <span class="text-[#82AAFF]">devOC</span>: <span
+                        class="text-[#FFCB6B]">Developer</span
+                    > = {}
+                    <div class="pl-4">
+                        name: <span class="text-[#C3E88D]">'devOC'</span>,
+                    </div>
+                    <div class="pl-4">
+                        mission: <span class="text-[#C3E88D]"
+                            >'Transforming ideas'</span
+                        >,
+                    </div>
+                    <div class="pl-4">
+                        stack: [<span class="text-[#C3E88D]">'Fullstack'</span
+                        >],
+                    </div>
+                    <div class="pl-4">
+                        <span class="text-[#82AAFF]">build</span>: (<span
+                            class="text-[#F78C6C]">concept</span
+                        >) => {}
+                        <div class="pl-8">
+                            <span class="text-[#C792EA]">return</span> concept.<span
+                                class="text-[#82AAFF]">toReality</span
+                            >();
+                        </div>
+                        <div class="pl-4"></div>
+                    </div>
+                    <div></div>;
+                </div>
+            </div>
+        </div>
+
+        <!-- Decoration glow -->
+        <div
+            class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#06B6D4]/20 blur-[100px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+        >
+        </div>
+    </div>
+</section>

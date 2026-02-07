@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Headings */
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Body text */
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Code / dev */
+.font-jetbrains {
+  font-family: "JetBrains Mono", monospace;
+}

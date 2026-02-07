@@ -1,0 +1,24 @@
+[
+    {
+        "stacks":["next.js","fastapi","postgresql"],
+        "titulo":"Newsletter con IA",
+        "descripcion":"Platforma para agregar documentos pdf y recibir un resumen de los mismos con IA",
+        "imagen":"https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=1200",
+        "github":"https://github.com/TizoG/MonitorBOE-BOD"
+
+    },
+    {
+        "stacks":["astro","fastapi","postgresql"],
+        "titulo":"Agregador de Notícias",
+        "descripcion":"Agregador de noticias de diferentes fuentes",
+        "imagen":"https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
+        "github":"https://github.com/TizoG/openNewHub"
+    },
+    {
+        "stacks":["next.js","fastapi","postgresql"],
+        "titulo":"Control de Suscripciones",
+        "descripcion":"Control de suscripciones con recordatorios de pago",
+        "imagen":"https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800",
+        "github":"https://github.com/TizoG/subscripTrack"
+    }
+]

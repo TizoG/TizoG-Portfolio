@@ -1,0 +1,49 @@
+---
+import { ChevronRightIcon, Github } from '@lucide/astro';
+import proyectos from '../data/proyectos.json';
+---
+
+<section class="max-w-7xl mx-auto px-6 md:px-12 py-20">
+    <div>
+        <span
+            class="text-[#06B6D4] font-jetbrains uppercase text-sm font-bold tracking-[0.3em] mb-4 block"
+            >portfolio</span
+        >
+        <h2
+            class="text-4xl md:text-5xl font-extrabold text-white mb-12 font-montserrat"
+        >
+            Código en Acción
+        </h2>
+        <div class="w-24 h-2 bg-[#06B6D4] rounded-full"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {
+            proyectos.map((proyecto) => (
+                <div class="rounded-xl bg-[#1E293B]">
+                    <img
+                        src={proyecto.imagen}
+                        alt="Imagen del proyecto"
+                        class="rounded-t-xl h-64 w-full object-cover saturate-0 hover:saturate-100 "
+                    />
+                    <div class="flex items-center gap-4">
+                        <span class="text-[#06B6D4] px-1 bg-[#06B6D4]/30 w-fit uppercase font-jetbrains">
+                            {proyecto.stacks.join(' ')}
+                        </span>
+                    </div>
+                    <div>
+                        <h3>{proyecto.titulo}</h3>
+                        <p>{proyecto.descripcion}</p>
+                    </div>
+                    <div>
+                        <a href="/detalle-1">
+                            ver detalles <ChevronRightIcon />
+                        </a>
+                        <a href={proyecto.github}>
+                            <Github />
+                        </a>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</section>
